@@ -27,7 +27,7 @@ Before starting, ensure you have:
 ### 🛠️ Setup Steps
 1. **Clone the repository:**
    ```bash
-   https://github.com/The0Invictus/hey_mai.git
+   git clone https://github.com/The0Invictus/hey_mai.git
    cd hey_mai
    
 2. **Activate venv and Install dependencies:**
