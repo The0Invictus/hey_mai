@@ -32,14 +32,14 @@ Before starting, ensure you have:
    
 2. **Activate venv and Install dependencies:**
    ```bash
-   python -m venv .venv
+   python3 -m venv .venv
    source .venv/bin/activate
    pip install -r requirements.txt
    
 3. **Download models**
    ```bash
-   hf download ivvvvvi/hey_mai Hey_Mai.onnx --local-dir ./my_local_model
-   hf download litert-community/gemma-4-E2B-it-litert-lm gemma-4-E2B-it.litertlm --local-dir ./my_local_model
+   hf download ivvvvvi/hey_mai Hey_Mai.onnx --local-dir ./models
+   hf download litert-community/gemma-4-E2B-it-litert-lm gemma-4-E2B-it.litertlm --local-dir ./models
 4. **Run main script**
    ```bash
-   python main.py
+   python3 main.py
