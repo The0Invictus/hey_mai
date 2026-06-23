@@ -1,4 +1,5 @@
 from openwakeword.model import Model
+from openwakeword.utils import download_models
 import queue
 import sounddevice as sd
 import soundfile as sf
@@ -24,6 +25,8 @@ wake_word_model = Model(
     wakeword_models=[str(hey_mai)],
     inference_framework = "onnx"
 )
+
+download_models()
 vad_model = load("mlx-community/silero-vad")
 messages = [litert_lm.Message.system("""
 Function - you will have a conversation from user from audio, answer only in ENGLISH, that can be then turned to sound, meaning no special characters.
